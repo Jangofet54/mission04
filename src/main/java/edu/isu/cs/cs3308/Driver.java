@@ -10,6 +10,7 @@ import edu.isu.cs.cs3308.structures.RedBlueDoubleStack;
 /**
  *
  * @author Isaac Griffith
+ * @author Eric Peterson
  */
 public class Driver {
 
@@ -35,6 +36,7 @@ public class Driver {
 
         System.out.println("\n");
         System.out.println("Reversed:");
+        deque.reverse();
         deque.printQueue();
 
         System.out.println("\n");
@@ -48,8 +50,8 @@ public class Driver {
         deque.merge(temp);
 
         System.out.println("\n");
-        Stack<Integer> stack1 = new LinkedStack<>();
-        Stack<Integer> stack2 = new LinkedStack<>();
+        LinkedStack<Integer> stack1 = new LinkedStack<>();
+        LinkedStack<Integer> stack2 = new LinkedStack<>();
         for (int i = 4; i > 0; i--)
             stack1.push(i);
         for (int i = 8; i > 5; i--)
